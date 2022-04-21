@@ -1,0 +1,9 @@
+FROM python:latest
+
+LABEL Maintainer ="Krishnaveni"
+
+WORKDIR /user/app/src
+
+COPY test.py ./
+
+CMD ["python", ./test.py]
